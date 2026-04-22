@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercícios</title>
+</head>
+<body>
+
+<script>
+
+// 1. Soma
+let num1 = Number(prompt("1) Digite o primeiro número:"));
+let num2 = Number(prompt("Digite o segundo número:"));
+alert("Soma: " + (num1 + num2));
+
+// 2. Antecessor e sucessor
+let num = Number(prompt("2) Digite um número:"));
+alert("Antecessor: " + (num - 1) + " | Sucessor: " + (num + 1));
+
+// 3. Média
+let nome = prompt("3) Digite seu nome:");
+let n1 = Number(prompt("Nota 1:"));
+let n2 = Number(prompt("Nota 2:"));
+let n3 = Number(prompt("Nota 3:"));
+let media = (n1 + n2 + n3) / 3;
+alert("Aluno: " + nome + " | Média: " + media);
+
+// 4. Conversor de moeda
+let reais = Number(prompt("4) Dinheiro em reais:"));
+let dolares = reais / 5;
+alert("Dólares: " + dolares);
+
+// 5. Área do terreno
+let largura = Number(prompt("5) Largura do terreno:"));
+let comprimento = Number(prompt("Comprimento do terreno:"));
+let area = largura * comprimento;
+alert("Área: " + area);
+
+// 6. Celsius para Fahrenheit
+let c = Number(prompt("6) Temperatura em Celsius:"));
+let f = (c * 9/5) + 32;
+alert("Fahrenheit: " + f);
+
+// 7. Desconto
+let preco = Number(prompt("7) Preço do produto:"));
+let desconto = preco * 0.15;
+let final = preco - desconto;
+alert("Original: " + preco + "\nDesconto: " + desconto + "\nFinal: " + final);
+
+// 8. Restaurante
+let total = Number(prompt("8) Valor da conta:"));
+let gorjeta = total * 0.10;
+let totalFinal = total + gorjeta;
+alert("Gorjeta: " + gorjeta + "\nTotal: " + totalFinal);
+
+// 9. Dias vividos
+let idade = Number(prompt("9) Idade:"));
+let dias = idade * 365;
+alert("Dias vividos: " + dias);
+
+// 10. Salário do Dev
+let horas = Number(prompt("10) Horas trabalhadas:"));
+let valorHora = Number(prompt("Valor por hora:"));
+let salarioBruto = horas * valorHora;
+let imposto = salarioBruto * 0.08;
+let salarioLiquido = salarioBruto - imposto;
+
+alert("Salário bruto: " + salarioBruto +
+      "\nImposto: " + imposto +
+      "\nSalário líquido: " + salarioLiquido);
+
+</script>
+
+</body>
+</html>
